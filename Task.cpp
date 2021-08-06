@@ -18,3 +18,13 @@ void Task::setName(const QString& name)
 {
     ui->checkBox->setText(name);
 }
+
+QString Task::name() const
+{
+    return ui->checkBox->text();
+}
+
+bool Task::isCompleted() const
+{
+    return ui->checkBox->isChecked();
+}
